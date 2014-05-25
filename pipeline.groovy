@@ -3,7 +3,7 @@
 // Exome Variant Calling Pipeline
 //
 // Usage:
-//   bpipe run pipeline.groovy reads_1.fastq.gz reads_2.fastq.gz ... target_region.bed
+//   bpipe run pipeline.groovy reads_1.fastq.gz reads_2.fastq.gz ...
 // 
 // Authors: Simon Sadedin, MCRI
 //          Harriet Dashnow, VLSCI
@@ -12,8 +12,6 @@
 
 // Load the pipeline stages
 load 'pipeline_stages_config.groovy'
-
-//sample_info = SampleInfo.parse_sample_info(args[0]) //need to figure out how this fits in
 
 run {
     "%.fastq.gz" * [ fastqc ] + 
