@@ -28,6 +28,10 @@ Pipeline tool:
 -------------
 Bpipe code.google.com/p/bpipe/
 
+Requires a variant of the bpipe script to handle module specification. If this is not used, then the required modules must be loaded in the relevant .bashrc script.
+
+bpipe variant: [slugger70-bpipe](https://code.google.com/r/slugger70-bpipe/)
+
 Pipeline overview:
 -----------------
 * Check reads (FastQC)
